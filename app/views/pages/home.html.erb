@@ -1,0 +1,28 @@
+<div class="container">
+
+	<h1 style="text-align: center">Harry's Speakeasy</h1>
+
+	<span></span>
+
+	<table class="table table-striped">
+		<thead>
+		      <tr>
+		        <th></th>
+		        <th></th>
+		       </tr>
+		     </thead>
+
+		<tbody>
+		 <% @menus.each do |menu| %>
+		 <tr>
+		 	<td class="tablesize"><%= image_tag(menu.image_link) %></td>
+		 	<td><h2 id="center"><%= menu.name %></h2></td>
+		 	<td><%= link_to "Order &raquo;".html_safe, new_order_path(id: menu.id), id: "center", class: "btn btn-primary btn-lg" %></td>
+		 </tr>
+		 <% end %>
+		 </tbody>
+		 </table>
+
+		 <h2 style="text-align: center">Every menu item is just $7. Order Now.</h2>
+
+</div>

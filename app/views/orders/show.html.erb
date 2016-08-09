@@ -1,0 +1,40 @@
+<div class="container">
+
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+
+<h3>Confirmation</h3>
+
+<p>Your order is now being processed.</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @order.phone_number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @order.address %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @order.quantity %>
+</p>
+
+<%= link_to 'Back', root_path, class: "btn btn-primary btn-lg" %>
+
+</div>
+
+</div>
