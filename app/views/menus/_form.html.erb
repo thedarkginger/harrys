@@ -11,19 +11,26 @@
     </div>
   <% end %>
 
+<div class="form-group">
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
+  </div>
+    <div class="form-group">
     <div class="field">
     <%= f.label :option %><br>
-    <%= f.check_box :option %>
+    <%= f.check_box :option, class: "form-control" %>
   </div>
+  </div>
+      <div class="form-group">
   <div class="field">
     <%= f.label :image_link %><br>
-    <%= f.text_field :image_link %>
+    <%= f.text_field :image_link, class: "form-control" %>
   </div>
+  </div>
+      <div class="form-group">
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary btn-lg" %>
   </div>
 <% end %>
